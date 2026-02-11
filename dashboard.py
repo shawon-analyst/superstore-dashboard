@@ -98,13 +98,16 @@ region_wise_sales =  filtered_data.groupby(by = ['Region'], as_index = False)['S
 
 with col1:
     st.subheader('Category wise Sales')
-    fig = px.bar(data_frame= category_wise_sales , x= 'Category',  y='Sales', text=['${:,.2f}'.format(x) for x in category_wise_sales['Sales']],
+    fig = px.bar(data_frame= category_wise_sales , x= 'Category',  y='Sales',text_auto='.2s',
                  template='plotly_dark')
     fig.update_xaxes(showgrid = False)
     fig.update_yaxes(showgrid = False ,zeroline = False)
     fig.update_layout(
         height=500,
         margin=dict(l=0, r=0, t=50, b=0)
+    )
+    fig.update_traces(
+        textposition = 'outside'
     )
     st.plotly_chart(fig,use_container_width=True, height=500)
 
