@@ -1,6 +1,8 @@
-streamlit>=1.30.0
+streamlit
 pandas
 plotly
+scipy
 seaborn
-altair<5.0.0
+matplotlib
 openpyxl
+xlrd
