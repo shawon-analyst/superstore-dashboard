@@ -118,14 +118,14 @@ with col2:
 col1 , col2 = st.columns(2)
 
 with col1:
-    with st.expander('Category_wise_sales_view_data'):
+    with st.expander(' :point_right: Category_wise_sales_view_data'):
         st.write(category_wise_sales.style.background_gradient(cmap='Blues').format(precision = 2))
         csv = category_wise_sales.to_csv(index = False).encode('utf-8')
         st.download_button("Download data", data= csv, mime= 'text/csv', help= 'click here to download the data as  a CSV file',key= 'Category data')
     
     
 with col2:
-    with st.expander('Region_wise_sales_view_data'):
+    with st.expander(' :point_right: Region_wise_sales_view_data'):
         st.write(region_wise_sales.style.background_gradient(cmap='Oranges').format(precision =2))
         csv = region_wise_sales.to_csv(index = False).encode('utf-8')
         st.download_button("Download data", data= csv, mime= 'text/csv', key='Region data',help= 'click here to download the data as  a CSV file')
