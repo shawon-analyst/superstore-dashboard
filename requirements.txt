@@ -3,3 +3,4 @@ pandas
 plotly
 seaborn
 altair<5.0.0
+openpyxl
