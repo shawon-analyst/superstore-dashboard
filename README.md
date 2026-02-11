@@ -17,7 +17,7 @@ An interactive and professional-grade data analysis dashboard built using **Stre
 
 ## 🛠 Tech Stack
 * **Language:** Python
-* **Framework:** Streamlit (https://superstore-dashboard-2nyyxfezsdefow4vxfqx3g.streamlit.app/)
+* **Framework:** Streamlit (https://shawonidris.streamlit.app/)
 * **Visualization:** Plotly Express & Figure Factory
 * **Data Manipulation:** Pandas
 * **Excel Engines:** xlrd, openpyxl
